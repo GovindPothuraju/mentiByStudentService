@@ -1,0 +1,1 @@
+import{g as s}from"./index-iTxp0aD7.js";const r={async getCourses(e={}){return await s.get("/student/courses",{params:e})},async getCourseBySlug(e){return await s.get(`/student/courses/${e}`)},async enrollCourse(e){return await s.post(`/student/courses/${e}/enroll`)},async getCourseCategories(e){return await s.get(`/student/courses/${e}/categories`)}};export{r as c};

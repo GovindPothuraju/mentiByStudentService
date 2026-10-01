@@ -1,0 +1,1 @@
+import{g as s}from"./index-iTxp0aD7.js";const c={async getTopic(t,e,o="content"){return await s.get(`/student/courses/${t}/topics/${e}`,{params:{tab:o}})},async startTopic(t){return await s.post(`/student/topics/${t}/start`)},async completeTopic(t){return await s.post(`/student/topics/${t}/complete`)}};export{c as t};

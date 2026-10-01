@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #E5E0D8;
+  }
+  body {
+    background-color: #F7F4F0;
+    color: #0A0908;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CEBF;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B0A79B;
+}
+
+/* Code block styles */
+pre, code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ======================================================== */
+/* MENTIBY RICH HTML CONTENT FORMATTING                     */
+/* ======================================================== */
+.mentiby-html-content {
+  color: #1A1817;
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.75;
+}
+
+.mentiby-html-content h1 {
+  font-size: 1.625rem;
+  font-weight: 900;
+  color: #0A0908;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #FF9F1A;
+  letter-spacing: -0.025em;
+}
+
+.mentiby-html-content h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0A0908;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.mentiby-html-content h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  width: 4px;
+  background-color: #FF9F1A;
+  border-radius: 9999px;
+}
+
+.mentiby-html-content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0A0908;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mentiby-html-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0A0908;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.mentiby-html-content p {
+  margin-bottom: 1.15rem;
+  color: #2C2926;
+  line-height: 1.8;
+}
+
+/* Code Snippet in Sleek Black Box */
+.mentiby-html-content pre {
+  background-color: #0D1117 !important;
+  color: #4ADE80 !important; /* Bright emerald code */
+  padding: 1.25rem !important;
+  border-radius: 1rem !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.8125rem !important;
+  line-height: 1.65 !important;
+  overflow-x: auto !important;
+  border: 1px solid #30363D !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+  position: relative !important;
+}
+
+.mentiby-html-content pre code {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border: none !important;
+  font-size: inherit !important;
+  box-shadow: none !important;
+}
+
+/* Inline Code Pill */
+.mentiby-html-content code:not(pre code) {
+  background-color: #FFF7ED;
+  color: #9A3412;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.375rem;
+  border: 1px solid #FFEDD5;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* Lists */
+.mentiby-html-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  space-y: 0.5rem;
+}
+
+.mentiby-html-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  space-y: 0.5rem;
+}
+
+.mentiby-html-content li {
+  margin-bottom: 0.4rem;
+  color: #2C2926;
+  line-height: 1.7;
+}
+
+.mentiby-html-content li::marker {
+  color: #FF9F1A;
+  font-weight: bold;
+}
+
+/* Blockquotes / Callouts */
+.mentiby-html-content blockquote {
+  background-color: #FFFBEB;
+  border-left: 4px solid #F59E0B;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin: 1.25rem 0;
+  color: #78350F;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.65;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* Tables */
+.mentiby-html-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.8125rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #E5E0D8;
+}
+
+.mentiby-html-content th {
+  background-color: #0A0908;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border: 1px solid #0A0908;
+}
+
+.mentiby-html-content td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #E5E0D8;
+  background-color: #FFFFFF;
+  color: #2C2926;
+}
+
+.mentiby-html-content tr:nth-child(even) td {
+  background-color: #F7F4F0;
+}
+
+/* Links */
+.mentiby-html-content a {
+  color: #0A0908;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #FF9F1A;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.mentiby-html-content a:hover {
+  color: #FF9F1A;
+}
+
+.mentiby-html-content strong {
+  color: #0A0908;
+  font-weight: 700;
+}
+
+/* ========================================================= */
+/* MENTIBY TOPIC CONTENT ENHANCEMENTS                       */
+/* ========================================================= */
+
+/* Hide raw dumped images container since top ImageSlider handles them */
+.mentiby-html-content .topic-images,
+.mentiby-html-content .topic-image-gallery,
+.mentiby-html-content section.topic-images,
+.mentiby-html-content .gallery {
+  display: none !important;
+}
+
+/* Image Explanation Sections (Cards) */
+.mentiby-html-content .image-explanation {
+  background-color: #FFFFFF;
+  border: 2px solid #E5E0D8;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  margin: 2.25rem 0;
+  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s ease;
+}
+
+.mentiby-html-content .image-explanation:hover {
+  border-color: #F59E0B;
+}
+
+.mentiby-html-content .image-explanation > h2:first-child {
+  margin-top: 0;
+  color: #0A0908;
+  border-bottom: 2px solid #FEF3C7;
+  padding-bottom: 0.5rem;
+}
+
+.mentiby-html-content .image-explanation img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin: 1.25rem auto 1.5rem auto;
+  border: 2px solid #131110;
+  background-color: #131110;
+  display: block;
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.12);
+}
+
+/* Important Callout Boxes */
+.mentiby-html-content .important-box {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+  border: 2px solid #F59E0B;
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  color: #78350F;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.65;
+  margin: 1.5rem 0;
+  box-shadow: 0 1px 3px 0 rgba(245, 158, 11, 0.1);
+}
+
+.mentiby-html-content .important-box strong {
+  color: #92400E;
+}
+
+/* Important Concepts Section */
+.mentiby-html-content .important-concepts {
+  background-color: #FFFDF7;
+  border: 2px solid #FCD34D;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  margin: 2.5rem 0;
+}
+
+.mentiby-html-content .important-concepts h2 {
+  color: #B45309;
+  margin-top: 0;
+}
+
+/* Common Interview Traps Section */
+.mentiby-html-content .common-traps {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FFF1F2 100%);
+  border: 2px solid #FCA5A5;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  margin: 2.5rem 0;
+  color: #991B1B;
+}
+
+.mentiby-html-content .common-traps h2 {
+  color: #991B1B;
+  margin-top: 0;
+}
+
+.mentiby-html-content .common-traps li {
+  color: #7F1D1D;
+  font-weight: 500;
+}
+
+/* Final Summary Section */
+.mentiby-html-content .final-summary {
+  background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 100%);
+  border: 2px solid #6EE7B7;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  margin: 2.5rem 0;
+}
+
+.mentiby-html-content .final-summary h2 {
+  color: #065F46;
+  margin-top: 0;
+}
+
+/* Final Takeaway Black & Yellow Bar */
+.mentiby-html-content .final-takeaway {
+  background-color: #0A0908;
+  color: #FF9F1A;
+  font-weight: 800;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.875rem;
+  margin-top: 1.5rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+}
+
